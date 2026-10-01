@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/logo.png" alt="Searchat Behavior Banner" width="50%">
+  <img src="./src/assets/logo-spear%20(2).png" alt="SPEAR Banner" width="50%">
 </p>
 <p align="center">
 A standardized framework for capturing authentic human behavior in search and AI-chat experiments.
@@ -12,13 +12,13 @@ A standardized framework for capturing authentic human behavior in search and AI
 
 ## 📖 Description
 
-This repository contains the frontend application for **Searchat Behavior**. It provides the user interface for participants and researchers to interact with search-based and chat-based experimental tasks.
+This repository contains the frontend application for **SPEAR**. It provides the user interface for participants and researchers to interact with search-based and chat-based experimental tasks.
 
 Built with **React**, this application communicates with the backend API to manage experiment flows, authentication, task rendering, and data submission.
 
 > **⚠️ Note:** If you want to run the full stack (Frontend + Backend +
-> Database) together, please refer to the [Searchat Behavior Parent
-> Repository](https://github.com/lapic-ufjf/searchat-behavior).
+> Database) together, please refer to the [SPEAR Parent
+> Repository](https://github.com/lapic-ufjf/spear).
 > The instructions below are strictly for running the frontend
 > **independently** for isolated development or testing.
 
@@ -47,8 +47,8 @@ need:
 ## 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/lapic-ufjf/searchat-behavior-ui.git
-cd searchat-behavior-ui
+git clone https://github.com/lapic-ufjf/spear-ui.git
+cd spear-ui
 ```
 
 ---
@@ -62,7 +62,7 @@ cp .env.example .env
 | Variable            | Default                                   | Description          |
 |---------------------|-------------------------------------------|----------------------|
 | `PORT`              | `3001`                                    | Frontend server port |
-| `REACT_APP_API_URL` | `http://localhost:3000/searchat-behavior` | Backend API base URL |
+| `REACT_APP_API_URL` | `http://localhost:3000/spear` | Backend API base URL |
 
 ---
 ## 3️⃣ Run the Application
