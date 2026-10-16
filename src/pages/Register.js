@@ -236,16 +236,7 @@ const Register = () => {
                 ),
               }}
             />
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={researcher}
-                  onChange={(e) => setResearcher(e.target.checked)}
-                  color="primary"
-                />
-              }
-              label={t('researcher_label')}
-            />
+            
             <Button
               variant="contained"
               color="primary"
