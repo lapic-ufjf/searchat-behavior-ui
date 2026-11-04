@@ -15,21 +15,20 @@ import {
   Button,
   InputAdornment,
   IconButton,
-  Box,
-  FormControlLabel,
+  Box
 } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { ErrorMessage } from '../components/ErrorMessage';
 import { LoadingIndicator } from '../components/LoadIndicator';
 import { useTranslation } from 'react-i18next';
-import { Switch } from '@mui/material';
+
 
 const Register = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
 
   const [name, setName] = useState('');
-  const [researcher, setResearcher] = useState(false);
+  const [researcher] = useState(false);
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [isValidEmail, setIsValidEmail] = useState(true);
@@ -236,16 +235,7 @@ const Register = () => {
                 ),
               }}
             />
-            <FormControlLabel
-              control={
-                <Switch
-                  checked={researcher}
-                  onChange={(e) => setResearcher(e.target.checked)}
-                  color="primary"
-                />
-              }
-              label={t('researcher_label')}
-            />
+            
             <Button
               variant="contained"
               color="primary"
